@@ -6,13 +6,13 @@ const ListItems = (taskData)=>{
         <div>
             <Link to={`/task/${taskData.task.id}`}>
                 <div className="list-group-item list-group-item-action">
-                <h3>{taskData.task.task}</h3>
-                <span className={`badge badge-defindclass 
-                        ${taskData.task.priority==="HIGH"?"badge-danger":
-                        taskData.task.priority==="MID"?"badge-warning":
-                        taskData.task.priority==="LOW"?"badge-success":""}`}>
-                        {taskData.task.priority}
-                </span>
+                    <span><p className="listTask">{taskData.task.task}</p></span>
+                    <span className={`badge badge-defindclass 
+                            ${taskData.task.priority==="HIGH"?"badge-danger":
+                            taskData.task.priority==="MID"?"badge-warning":
+                            taskData.task.priority==="LOW"?"badge-success":""}`}>
+                            {taskData.task.priority}
+                    </span>
                 </div>
             </Link>
             

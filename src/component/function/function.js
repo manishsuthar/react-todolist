@@ -10,7 +10,7 @@ export function request(data,cb){
       "Content-Type": "application/x-www-form-urlencoded",
     },
     "data":data.payload,
-    "dataType": "TEXT",
+    "dataType": "json",
     "success":function(result){
         return cb(null,result);
     },

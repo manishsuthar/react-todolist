@@ -10,12 +10,15 @@
 .App-header {
   background-color: #282c34;
   min-height: 0vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 .App-link {
@@ -44,6 +47,10 @@
   background-color: #f0ad4e;
   height: 70px;
 }
+.blue{
+  background-color: #0aa6d1ee;
+  height: 70px;
+}
 .Active{
   background-color: #c4bdb3;
 }
@@ -54,7 +61,12 @@
 .headerHeight{
   height: 100px;
   padding: 0px;
+  position: fixed;
+  z-index: 1;
+  padding-top: 34px;
 }
 .rowMargin{
   margin: 0;
+  padding-top: 125px;
 }
+.textarea { font-size: 23px !important; }
